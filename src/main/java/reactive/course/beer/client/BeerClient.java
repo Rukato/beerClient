@@ -3,7 +3,6 @@ package reactive.course.beer.client;
 import java.util.UUID;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.reactive.function.client.ClientResponse;
 
 import reactive.course.beer.client.model.BeerDto;
 import reactive.course.beer.client.model.BeerPageList;

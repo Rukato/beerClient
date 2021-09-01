@@ -99,12 +99,12 @@ public class BeerClientImpTests {
         .flatMap(mono -> mono)
         .subscribe(beerDto -> {
             beerName.set(beerDto.getBeerName());
-            assertEquals("No Hammers On The Bar", beerDto.getBeerName());
+            assertEquals("My new beer", beerDto.getBeerName());
             countDownLatch.countDown();
         });
 
         countDownLatch.await();
-        assertEquals("No Hammers On The Bar", beerName.get());
+        assertEquals("My new beer", beerName.get());
     }
 
 
